@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Beer Diary - Review Input</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="diary.html">My Diary</a></li>
+            <li><a href="landing-page.html">Log Out</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="search">
+            <form>
+                <label for="beer_search">Search Beers:<br>
+                    <input type="text" placeholder="Snake Dog IPA">
+                </label>
+                <input type="submit">
+            </form>
+        </section>
+        <section>
+            <div>
+                <h1 id="beer-name">Snake Dog IPA</h1>
+                <p id="brewery-name">Flying Dog Brewery</p>
+                <ul id="beer-details">
+                    <li>ABV 7.1%</li>
+                    <li>IPU 60</li>
+                    <li>Style: Indian Pale Ale</li>
+                    <li>Avg Rating: 4.67</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus architecto placeat, odit eius distinctio aliquam ex rem. Aperiam tempore fugit cupiditate expedita architecto dolores in magni laudantium dolorum? Nostrum!</p>
+            </div>
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Beer Review:</legend>
+
+                        <label for="overall-review">Overall(1 to 5):
+                            <input type="range" name="overall-review" min="1" max="5" step="1" list="overall-list">
+                            <datalist id="overall-list">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </datalist>
+                        </label>
+
+                        <label for="color-review">Color(Light to Dark):
+                            <input type="range" name="color-review" min="1" max="5" step="1" list="color-list">
+                            <datalist id="color-list">
+                                <option>Light</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>Dark</option>
+                            </datalist>
+                        </label>
+
+                        <label for="aroma-review">Aroma (Most Domanant Fragrance):
+                            <select name="aroma-review">
+                                <option value="undecided">Undecided</option>
+                                <option>Bready</option>
+                                <option>Nutty</option>
+                                <option>Toasty</option>
+                                <option>Roasted</option>
+                                <option>Floral</option>
+                                <option>Fruity</option>
+                                <option>Piney</option>
+                                <option>Spicy</option>
+                            </select>
+                        </label>
+
+                        <label for="taste-review">Taste (Most Domanant Flavor Palate):
+                            <select name="taste-review">
+                                <option value="undecided">Undecided</option>
+                                <option>Crisp</option>
+                                <option>Hop</option>
+                                <option>Malt</option>
+                                <option>Roast</option>
+                                <option>Smoke</option>
+                                <option>Fruite & Spice</option>
+                                <option>Tart & Funky</option>
+                            </select>
+                        </label>
+
+                        <label for="drinkablity-review">Drinkability("One and Done" to "Keep'em Coming"):
+                            <input type="range" name="drinkablity-review" min="1" max="5" step="1" list="drinkability-list">
+                            <datalist id="drinkability-list">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </datalist>
+                        </label>
+
+                        <label for="notes-review">Notes:
+                                <textarea  name="drinkablity-review" rows="10" cols="30"></textarea>
+                        </label>                
+                        <input type="submit">
+                        <button>Cancel</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
